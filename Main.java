@@ -3,7 +3,7 @@ public class Main{
 
         // Initialization    
         readFile fileByLine = new readFile("Pieces.txt");
-        Pieces Pieces = new Pieces();
+        Piece Pieces = new Piece();
         Pieces.pieceInitializer(fileByLine.getTxtFileByLine());
 
         int[][][] testRotate = rotatePiece.rotateZ(Pieces.getDict().get("^sword, red"));
