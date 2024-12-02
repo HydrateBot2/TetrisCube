@@ -5,9 +5,7 @@ public class Box{
     final int END_BOX = 8;
     final int END_PIECE = 4;
 
-
-    //Box template
-    int[][][] box = {
+    int[][][] emptyBox = {
         {
             {1,1,1,1,1,1,1,1,1,1},
             {1,1,1,1,1,1,1,1,1,1},
@@ -129,6 +127,12 @@ public class Box{
             {1,1,1,1,1,1,1,1,1,1}
         }
     };
+    //Box template
+    int[][][] tetrisCube; 
+    
+    public Box(){
+        tetrisCube = emptyBox;
+    }
     
     /* Inserts a piece with a given starting position into the box
      * takes in the box, the piece thats being placed, the the forward, left, and downward shift(aka starting POS)
@@ -205,7 +209,9 @@ public class Box{
      * returns true if the piece cannot be placed(i.e theres a 2 outside the box)
      * or false if the piece can be placed
     */
-
+    public int[][][] getTetrisCube(){
+        return this.tetrisCube;
+    }
 
     public boolean checkBoxCollision(int[][][] box){
         boolean cannotPlace = false;
@@ -255,11 +261,20 @@ public class Box{
 
 
     //returns the box in this class, Box.java
-    public int[][][] getBox(){
-        return this.box;
-    }
 
-    
+    public String ToString(){
+        int counter = 0;
+        for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                for(int k = 0; k < 10; k++){
+                    if(tetrisCube[i][j][k] < 1){
+                        counter++;
+                    }
+                }
+            }
+        }
+        return "unfilled spots: " + counter;
+    }
     
     
 }

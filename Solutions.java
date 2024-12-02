@@ -1,49 +1,110 @@
 import java.util.ArrayList;
 public class Solutions {
-    int[][][][] solutions;
+    ArrayList<int[][][]> solutions = new ArrayList<int[][][]>();
     Box functionRunner = new Box();
+    Piece functionRunnerPiece = new Piece();
     PieceRotated functionRunnerPieceRotated = new PieceRotated();
 
-    int[][][] tetrisCube = functionRunner.getBox();
-    ArrayList<int[][][]> removedPieces;
+    ArrayList<int[][][]> placedPieces;
+    readFile functionerRunnerReadFile = new readFile("Pieces.txt");
+    int[][][] tetrisCube = functionRunner.getTetrisCube();
     Piece obj1;
     Piece tempPiece;
     int counter = 0;
+    final int END_PIECE = 4;
     final int X = 100;
     final int Y = 10;
     final int Z = 1;
     // array for discarding pieces
-    
-    public int[][][] getSolutions(int shift){ 
-        test2(shift);
-        if(functionRunner.fullBox(tetrisCube)){
-            return tetrisCube;
+
+    public void findSolutions(int pieceIndex){
+        functionRunnerPiece.pieceInitializer(functionerRunnerReadFile.getTxtFileByLine());
+        if(pieceIndex == 12){
+            solutions.add(deepCopy(functionRunner.getTetrisCube()));
+            return;
         }
-        functionRunner.removePiece(tetrisCube, tempPiece.getPiece(), tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
-        counter++;
-        System.out.println("iteration: " + this.counter);
-        return getSolutions(shift);
-    }
+        Piece piece = functionRunnerPiece.getDict().get(functionRunnerPiece.getKeyList().get(pieceIndex));
 
-    public Solutions(Piece obj1){
-        this.obj1 = obj1;
-    }
-
-    public int[][][] test2(int shift){
-        int[][][] tempint = functionRunner.getBox();
-        for(int i = 0; i < 12; i++){
-            tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
-            ArrayList<Piece> rotations = Rotations.getAllRotations(tempPiece);
-            for (Piece currentPiece : rotations) {
-                tempint = iterateThroughPositions(this.tetrisCube, currentPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ() + shift);
-                if(tempint != null){
-                    this.tetrisCube = tempint;
-                    break;
+         // Try placing this piece in every possible position with every rotation
+        for (Piece rotation : Rotations.getAllRotations(piece)){
+            //System.out.println("Trying new rotation");
+            for (int x = 0; x < 7; x++) {
+               // System.out.println("x = " + x);
+                for (int y = 0; y < 7; y++) {
+                   // System.out.println("y = " + y);
+                    for (int z = 0; z < 7; z++) {
+                        //System.out.println("z = " + z);
+                        if (canPlacePiece(tetrisCube, rotation, x, y, z)) {
+                            System.out.println("Piece: " + rotation.getName() + " placed at " + x + " " + y + " " + z);
+                            tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z); // Place the piece
+                            for(int i = 0; i < 10; i++){
+                                for(int j = 0; j < 10; j++){
+                                    for(int k = 0; k < 10; k++){
+                                    System.out.print(tetrisCube[i][j][k]);
+                                    }
+                                    System.out.println();
+                                }
+                                System.out.println();
+                            }
+                            findSolutions(pieceIndex + 1); // Recurse to place next piece
+                            tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z); // Backtrack
+                        }
+                    }
                 }
             }
         }
-        return this.tetrisCube;
+
+        // Piece could not be placed anywhere
+        // Remove
     }
+
+    private int[][][] deepCopy(int[][][] original) {
+        int[][][] copy = new int[original.length][original[0].length][original[0][0].length];
+        for (int i = 0; i < original.length; i++) {
+            for (int j = 0; j < original[0].length; j++) {
+                System.arraycopy(original[i][j], 0, copy[i][j], 0, original[0][0].length);
+            }
+        }
+        return copy;
+    }
+
+    public int[][][] insertPiece(int[][][] oldCube, int[][][] piece, int leftShift, int forwardShift, int downwardShift){
+        int[][][] newBox = new int[10][10][10];
+        for (int i = 0; i < 10; i++) {
+            for(int j = 0; j < 10; j++) {
+                for(int k = 0; k < 10; k++){
+                    newBox[i][j][k] = oldCube[i][j][k];
+                }
+            }
+        }
+        for(int x = 0; x < END_PIECE; x++){
+            for(int y = 0; y < END_PIECE; y++){
+                for(int z = 0; z < END_PIECE; z++){
+                    newBox[x + leftShift][y + forwardShift][z + downwardShift] = oldCube[x + leftShift][y + forwardShift][z + downwardShift] + piece[x][y][z];
+                }
+            }
+        }
+        return newBox;
+    }
+    
+    public boolean canPlacePiece(int[][][] oldcube, Piece piece, int leftShift, int forwardShift, int downwardShift){
+        boolean cannotPlace = true;
+        int [][][] tempCube = new int[10][10][10];
+        tempCube = insertPiece(oldcube, piece.getPiece(), leftShift, forwardShift, downwardShift);
+        for(int i = 0; i < 10; i++){
+                for(int j = 0; j < 10; j++){
+                    for(int k = 0; k < 10; k++){
+                        if(tempCube[i][j][k] > 1){
+                            cannotPlace = false;
+                        }
+                    }
+                }
+        }
+        return cannotPlace;
+        //return (checkBoxCollision(box) || checkPieceCollision(box));
+    }
+
+    
 
     // public int[][][] tryAllRotations(){
     //     int[][][] tempint = functionRunner.getBox();
@@ -99,16 +160,16 @@ public class Solutions {
     }
 
     //initial test(see how many pieces the computer can put in the box) WITHOUT ROTATIONS
-    public int[][][] test(){
-        int[][][] tempint = functionRunner.getBox();
-        Piece tempPiece;
-        for(int i = 0; i < 12; i++){
-            tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
-            tempint = iterateThroughPositions(this.tetrisCube, tempPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
-            this.tetrisCube = tempint;
-        }
-        return this.tetrisCube;
-    }
+    // public int[][][] test(){
+    //     int[][][] tempint = functionRunner.getTetrisCube();
+    //     Piece tempPiece;
+    //     for(int i = 0; i < 12; i++){
+    //         tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
+    //         tempint = iterateThroughPositions(this.tetrisCube, tempPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
+    //         this.tetrisCube = tempint;
+    //     }
+    //     return this.tetrisCube;
+    // }
 
     // // test with rotations yo
     // public int[][][] test2(){
@@ -167,14 +228,39 @@ public class Solutions {
     //     return getTetrisCube();
     // }
 
+     // public int[][][] getSolutions(int shift){ 
+    //     test2(shift);
+    //     if(functionRunner.fullBox(tetrisCube)){
+    //         return tetrisCube;
+    //     }
+    //     functionRunner.removePiece(tetrisCube, tempPiece.getPiece(), tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
+    //     counter++;
+    //     System.out.println("iteration: " + this.counter);
+    //     return getSolutions(shift);
+    // }
+
+    // public Solutions(Piece obj1){
+    //     this.obj1 = obj1;
+    // }
+
+    // public int[][][] test2(int shift){
+    //     int[][][] tempint = functionRunner.getBox();
+    //     for(int i = 0; i < 12; i++){
+    //         tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
+    //         ArrayList<Piece> rotations = Rotations.getAllRotations(tempPiece);
+    //         for (Piece currentPiece : rotations) {
+    //             tempint = iterateThroughPositions(this.tetrisCube, currentPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ() + shift);
+    //             if(tempint != null){
+    //                 this.tetrisCube = tempint;
+    //                 break;
+    //             }
+    //         }
+    //     }
+    //     return this.tetrisCube;
+    // }
 
     //returns the box that stores all the pieces
-    public int[][][] getTetrisCube(){
-        return this.tetrisCube;
-    }
-
-
-
+    
 
     //future stuff
 

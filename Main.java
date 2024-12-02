@@ -5,10 +5,11 @@ public class Main{
         // Initialization    
         readFile fileByLine = new readFile("Pieces.txt");
         Piece pieces = new Piece();
+        Box box = new Box();
         pieces.pieceInitializer(fileByLine.getTxtFileByLine());
-        System.out.println(pieces.keyList);
-        System.out.println(pieces.keyList);
-        Solutions test = new Solutions(pieces);
+        // System.out.println(pieces.keyList);
+        // System.out.println(pieces.keyList);
+        Solutions test = new Solutions();
         Rotations rotate1 = new Rotations();
         Piece tempPiece = pieces.getParticularPiece();
 
@@ -45,16 +46,16 @@ public class Main{
         // }
         // System.out.println(test.getpieceinsert());
 
-        test.getSolutions(1);
-        for(int i = 0; i < 10; i++){
-            for(int j = 0; j < 10; j++){
-                for(int k = 0; k < 10; k++){
-                System.out.print(test.getTetrisCube()[i][j][k]);
-                }
-                System.out.println();
-            }
-            System.out.println();
-        }
+        test.findSolutions(0);
+        // for(int i = 0; i < 10; i++){
+        //     for(int j = 0; j < 10; j++){
+        //         for(int k = 0; k < 10; k++){
+        //         System.out.print(box.getTetrisCube()[i][j][k]);
+        //         }
+        //         System.out.println();
+        //     }
+        //     System.out.println();
+        // }
 
 
         //prior tests
