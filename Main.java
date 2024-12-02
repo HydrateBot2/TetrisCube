@@ -45,7 +45,7 @@ public class Main{
         // }
         // System.out.println(test.getpieceinsert());
 
-        test.test2();
+        test.getSolutions(1);
         for(int i = 0; i < 10; i++){
             for(int j = 0; j < 10; j++){
                 for(int k = 0; k < 10; k++){
@@ -55,8 +55,6 @@ public class Main{
             }
             System.out.println();
         }
-        System.out.println(test.getpieceinsert());
-
 
 
         //prior tests

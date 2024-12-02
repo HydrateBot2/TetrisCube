@@ -2,41 +2,40 @@ import java.util.ArrayList;
 public class Solutions {
     int[][][][] solutions;
     Box functionRunner = new Box();
+    PieceRotated functionRunnerPieceRotated = new PieceRotated();
 
     int[][][] tetrisCube = functionRunner.getBox();
+    ArrayList<int[][][]> removedPieces;
     Piece obj1;
     Piece tempPiece;
-    int PieceInsertion;
-    int PieceCounter;
+    int counter = 0;
     final int X = 100;
     final int Y = 10;
     final int Z = 1;
     // array for discarding pieces
     
-    public int[][][] getSolutions(){ 
-        test2();
+    public int[][][] getSolutions(int shift){ 
+        test2(shift);
         if(functionRunner.fullBox(tetrisCube)){
             return tetrisCube;
         }
         functionRunner.removePiece(tetrisCube, tempPiece.getPiece(), tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
-        if(PieceInsertion > 2){
-            PieceInsertion--;
-        }
-        System.out.println(PieceInsertion);
-        return getSolutions();
+        counter++;
+        System.out.println("iteration: " + this.counter);
+        return getSolutions(shift);
     }
 
     public Solutions(Piece obj1){
         this.obj1 = obj1;
     }
 
-    public int[][][] test2(){
+    public int[][][] test2(int shift){
         int[][][] tempint = functionRunner.getBox();
         for(int i = 0; i < 12; i++){
             tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
             ArrayList<Piece> rotations = Rotations.getAllRotations(tempPiece);
             for (Piece currentPiece : rotations) {
-                tempint = iterateThroughPositions(this.tetrisCube, currentPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
+                tempint = iterateThroughPositions(this.tetrisCube, currentPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ() + shift);
                 if(tempint != null){
                     this.tetrisCube = tempint;
                     break;
@@ -79,7 +78,6 @@ public class Solutions {
                             }
                     }
                     if(!cannotPlace) {
-                        PieceInsertion++;
                         
                         piece.setStartPOS(x, y, z + 1);
                         // for(int o = 0; o < 10; o++){
@@ -97,7 +95,6 @@ public class Solutions {
             }
         }
         // Couldn't place piece
-        System.out.println(PieceInsertion);
         return null;
     }
 
@@ -176,9 +173,6 @@ public class Solutions {
         return this.tetrisCube;
     }
 
-    public int getpieceinsert(){
-        return this.PieceInsertion;
-    }
 
 
 
