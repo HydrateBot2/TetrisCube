@@ -1,14 +1,13 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
 public class readFile {
     //Initializing variables
     Dictionary<String, int[][][]> pieceDictionary = new Hashtable<>();
-    String[] txtFileByLine = new String[263];
+    String[] txtFileByLine = new String[275];
     int counter = 0;
     Enumeration keyList;
 
@@ -52,33 +51,33 @@ public class readFile {
         String tempLine;
         int[][][] tempPiece = new int[4][4][4];
         String tempName = "";
-
-        for(int line = 0; line < txtFile.length; line++){
-            tempLine = txtFile[line];
-            Matcher matcher = pattern.matcher(tempLine);
-
-            for(int w = 0; w < 12; w++){
-                for(int i = 0; i < 4; i++){
-                    for(int j = 0; j < 4; j++){
-                        for(int k = 0; k < 4; k++){
-                            if(matcher.find()){
-                                tempName = tempLine;
-                            } else if(tempLine.isEmpty()) {
-                                continue;
-                            } else{
-                                int x = tempLine.charAt(k) - '0';
-                                tempPiece[i][j][k] = x;
-                                
-                                
-                            }    
-
+            for(int line = 0; line < txtFile.length; line++){
+                // System.out.print(txtFile[line]);
+                // System.out.println();
+                tempLine = txtFile[line];
+                if(tempLine.isEmpty()){
+                    continue;
+                } else if(tempLine.charAt(0) == '^'){
+                    tempName = tempLine;
+                    line+= 2;
+                    for(int k = 0; k < 4; k++){
+                        for(int i = 0; i < 4; i++){
+                            tempLine = txtFile[line];
+                            for(int j = 0; j < 4; j++){
+                                    int x = tempLine.charAt(j) - '0';
+                                    tempPiece[k][i][j] = x;
+                            }
+                            line++;
                         }
+                        line++;
                     }
                 }
                 pieceDictionary.put(tempName, tempPiece);
-
+                
             }
-        }
+            System.out.println();
+            System.out.println(pieceDictionary.get("^sword, red")[0][0][0]);
+            System.out.println();
         this.keyList = pieceDictionary.keys();
     }
 }

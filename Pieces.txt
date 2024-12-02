@@ -1,9 +1,9 @@
 ^sword, red
 
-0000
-0000
-0000
-0000
+1111
+1111
+1111
+1111
 
 0000
 0000
@@ -19,6 +19,7 @@
 0000
 0000
 1111
+
 
 ^extended L with a thumb, blue 
 
@@ -42,6 +43,7 @@
 1000
 1111
 
+
 ^extended L with a thumb shifted left, blue
 
 0000
@@ -63,6 +65,7 @@
 1000
 1000
 1111
+
 
 ^Regular L with thumb, yellow
 
@@ -86,6 +89,7 @@
 1000
 1100
 
+
 ^Short t with a thumb, yellow
 
 0000
@@ -107,6 +111,7 @@
 0000
 0100
 1110
+
 
 ^Double L stacked, yellow  
 
@@ -130,6 +135,7 @@
 1100
 0100
 
+
 ^short t with extension, yellow
 
 0000
@@ -151,6 +157,7 @@
 0000
 1110
 0100
+
 
 ^Regular L with tail, blue
 
@@ -174,6 +181,7 @@
 0011
 1110
 
+
 ^small L with double tail, blue
 
 0000
@@ -195,6 +203,7 @@
 0000
 1000
 1100
+
 
 ^Big L, red
 
@@ -218,6 +227,7 @@
 0000
 1110
 
+
 ^Square with tail, red
 
 0000
@@ -239,6 +249,7 @@
 0000
 0000
 1111
+
 
 ^t with tail, red
 
