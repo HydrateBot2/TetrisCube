@@ -10,3 +10,20 @@ still issues
 
 Solution: TBD
 
+
+9/23/24
+Figured out the issue that was cuasing the pieces to be placed over and over
+moved collision check into the Piece class to get it working
+
+Got Done: iterateThroughPieces now actually places piece :D
+
+
+9/25/24
+
+Mostly used ChatGPT to fix the rotation class and get all the unique rotations for each Piece
+Rotations is now working and replaces rotatePiece.java
+
+Got Done: Got every unique rotation for each piece stored in an arrayList
+:D
+
+

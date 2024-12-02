@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class Piece extends rotatePiece{
+public class Piece{
     ArrayList<Integer[][][]> piecesList = new ArrayList<>(); 
     Dictionary<String, Piece> pieceDictionary = new Hashtable<>();
     ArrayList<String> keyList;
@@ -71,6 +71,9 @@ public class Piece extends rotatePiece{
     //Backend programming stuff
 
 
+    public Piece getParticularPiece(){
+        return this.pieceDictionary.get("^sword, red");
+    }
     public int[][][] getPiece(){
         return this.piece;
     }
@@ -131,10 +134,34 @@ public class Piece extends rotatePiece{
         }
     }
 
-    @Override
-    public String toString(){
-        return "Start POS: " + this.startX + " " + this.startY + " " + this.startZ + " Rotation: " + this.rotation + " Name: " + this.pieceName; 
-    }
+    
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            sb.append("Piece Name: ").append(this.getName()).append("\n");
+            sb.append("Start Position: (").append(this.getX()).append(", ")
+              .append(this.getY()).append(", ").append(this.getZ()).append(")\n");
+            sb.append("Rotation: ").append(this.getRotation()).append(" degrees\n");
+            sb.append("Piece Structure:\n");
+    
+            int[][][] pieceArray = this.getPiece();
+    
+            // Iterate over the Z-axis (layers)
+            for (int z = 0; z < pieceArray.length; z++) {
+                sb.append("Layer Z = ").append(z).append(":\n");
+                // Iterate over the Y-axis (rows)
+                for (int y = 0; y < pieceArray[z].length; y++) {
+                    // Iterate over the X-axis (columns)
+                    for (int x = 0; x < pieceArray[z][y].length; x++) {
+                        sb.append(pieceArray[z][y][x]).append(" ");
+                    }
+                    sb.append("\n"); // Newline after each row
+                }
+                sb.append("\n"); // Extra newline after each layer
+            }
+            return sb.toString();
+        }
+    
 
 
 

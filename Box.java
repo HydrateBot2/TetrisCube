@@ -156,6 +156,27 @@ public class Box{
         // System.out.println(oldCube[2][2][2] + " o ");
         return newBox;
     }
+    public int[][][] removePiece(int[][][] oldCube, int[][][] piece, int leftShift, int forwardShift, int downwardShift){
+        int[][][] newBox = new int[10][10][10];
+        for (int i = 0; i < 10; i++) {
+            for(int j = 0; j < 10; j++) {
+                for(int k = 0; k < 10; k++){
+                    newBox[i][j][k] = oldCube[i][j][k];
+                }
+            }
+        }
+
+        for(int x = 0; x < END_PIECE; x++){
+            for(int y = 0; y < END_PIECE; y++){
+                for(int z = 0; z < END_PIECE; z++){
+                    newBox[x + leftShift][y + forwardShift][z + downwardShift] = oldCube[x + leftShift][y + forwardShift][z + downwardShift] - piece[x][y][z];
+                }
+            }
+        }
+        // System.out.println(newBox[2][2][2] + " n ");
+        // System.out.println(oldCube[2][2][2] + " o ");
+        return newBox;
+    }
 
     /*Combination of both checkBoxCollision and checkPieceCollision(See below)
     * returns true if piece is colliding with either the box or another piece
@@ -217,6 +238,19 @@ public class Box{
             }
         }
         return cannotplace;
+    }
+
+    public boolean fullBox(int[][][] box){
+        for(int i = 0; i < 10; i++){
+            for(int j = 0; j < 10; j++){
+                for(int k = 0; k < 10; k++){
+                    if(box[i][j][k] !=  1){
+                        return false;
+                    }
+                }
+            }
+        }
+        return true;
     }
 
 
