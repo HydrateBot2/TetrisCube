@@ -5,8 +5,7 @@ public class Piece{
     ArrayList<Integer[][][]> piecesList = new ArrayList<>(); 
     Dictionary<String, Piece> pieceDictionary = new Hashtable<>();
     ArrayList<String> keyList = new ArrayList<String>();
-     
-    readFile txtfile = new readFile("Pieces.txt");
+
     private int[][][] piece;
     private int startX;
     private int startY;

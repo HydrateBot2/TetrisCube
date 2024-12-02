@@ -4,9 +4,9 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 
-public class readFile {
+public class ReadFile {
     //Initializing variables
-    private String[] txtFileByLine = new String[275];
+    private String[] txtFileByLine;
     private int counter = 0;
 
 
@@ -15,15 +15,16 @@ public class readFile {
     Pattern pattern = Pattern.compile("^");
 
     //Takes in a text file, stores each line in an array
-    public readFile(String fileName){
+    public ReadFile(String fileName, int fileSize){
+        this.txtFileByLine = new String[fileSize];
         try{
-        File file1 = new File(fileName);
-        Scanner reader = new Scanner(file1);
-        while (reader.hasNextLine()) {
-            String line = reader.nextLine();
-            txtFileByLine[counter] = line;
-            counter++;
-        }
+            File file1 = new File(fileName);
+            Scanner reader = new Scanner(file1);
+            while (reader.hasNextLine()) {
+                String line = reader.nextLine();
+                txtFileByLine[counter] = line;
+                counter++;
+            }
         reader.close();
     } catch (FileNotFoundException e){
         System.out.println("An error occured.");
@@ -36,4 +37,27 @@ public class readFile {
     public String[] getTxtFileByLine(){
         return txtFileByLine;
     }
+
+    //HeadStart files below
+    //
+    //
+    //HeadStart files below
+
+
+    // public readFile(String fileName, boolean HeadStart){
+    //     try{
+    //         File file1 = new File(fileName);
+    //         Scanner reader = new Scanner(file1);
+    //         while (reader.hasNextLine()) {
+    //             String line = reader.nextLine();
+    //             txtFileByLineWithHeadStart[counter] = line;
+    //             counter++;
+    //         }
+    //         reader.close();
+    //     } catch (FileNotFoundException e){
+    //         System.out.println("An error occured.");
+    //         e.printStackTrace();
+    // }
+    // }
+
 }

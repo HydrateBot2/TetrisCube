@@ -3,10 +3,12 @@ public class Main{
         public static void main(String[] args){
 
         // Initialization    
-        readFile fileByLine = new readFile("Pieces.txt");
+        ReadFile fileByLine = new ReadFile("Pieces.txt", 275);
+        ReadFile fileByLineWithHeadStart = new ReadFile("HeadStartPieces.txt", 229);
         Piece pieces = new Piece();
         Box box = new Box();
-        pieces.pieceInitializer(fileByLine.getTxtFileByLine());
+        //pieces.pieceInitializer(fileByLine.getTxtFileByLine());
+        //pieces.pieceInitializer(fileByLine.getTxtFileByLineWithHeadStart());
         // System.out.println(pieces.keyList);
         // System.out.println(pieces.keyList);
         Solutions test = new Solutions();
@@ -45,8 +47,8 @@ public class Main{
         //     System.out.println();
         // }
         // System.out.println(test.getpieceinsert());
-
-        test.findSolutions(0);
+        test.findSolutionsWithHeadStart(0);
+        //test.findSolutions(0);
         // for(int i = 0; i < 10; i++){
         //     for(int j = 0; j < 10; j++){
         //         for(int k = 0; k < 10; k++){

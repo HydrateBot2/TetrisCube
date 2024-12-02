@@ -26,4 +26,10 @@ Rotations is now working and replaces rotatePiece.java
 Got Done: Got every unique rotation for each piece stored in an arrayList
 :D
 
+11/22/2024
 
+Need to finish:
+Making updates folder for code and publish all updates to new repository
+delete old repositories
+finishing making code more legible in solutions and other classes(better variable names)
+finish headstart code
