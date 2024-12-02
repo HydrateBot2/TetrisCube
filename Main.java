@@ -4,17 +4,29 @@ public class Main{
         // Initialization    
         readFile fileByLine = new readFile("Pieces.txt");
         Piece pieces = new Piece();
-        Solutions test = new Solutions();
+        pieces.pieceInitializer(fileByLine.getTxtFileByLine());
+        System.out.println(pieces.keyList);
+        System.out.println(pieces.keyList);
+        Solutions test = new Solutions(pieces);
+
+
+
+        //initial test
         test.test();
         for(int i = 0; i < 10; i++){
             for(int j = 0; j < 10; j++){
                 for(int k = 0; k < 10; k++){
-                System.out.print(test.getBox1()[i][j][k]);
+                System.out.print(test.getTetrisCube()[i][j][k]);
                 }
                 System.out.println();
             }
             System.out.println();
         }
+
+
+
+        //prior tests
+
 
         // int[][][] testRotate = rotatePiece.rotateZ(Pieces.getDict().get("^sword, red"));
         // for(int i = 0; i < 4; i++){

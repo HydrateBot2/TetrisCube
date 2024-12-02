@@ -6,12 +6,10 @@ import java.util.regex.Pattern;
 
 public class readFile {
     //Initializing variables
-    String[] txtFileByLine = new String[275];
-    int counter = 0;
+    private String[] txtFileByLine = new String[275];
+    private int counter = 0;
 
-    public readFile(){
-        
-    }
+
 
     //Initializing and training regular expression
     Pattern pattern = Pattern.compile("^");

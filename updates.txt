@@ -1,0 +1,12 @@
+9/18/24
+Got done: fixed one of the issues, cleaned up code a lot(Still needs quite a bit of work)
+
+Issue: when running the "test" function, the tetrisCube ends up having more than 12 pieces
+
+What I think is casuing the issue: I believe that some of my objects are referencing the same object when they should be seperate, causing changes I do not intend.
+
+fixed one of the issues causing the cube to be falsely updated everytime the piece was put in.
+still issues
+
+Solution: TBD
+

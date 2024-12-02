@@ -1,12 +1,12 @@
-import java.util.ArrayList;
-import javax.xml.stream.events.EndDocument;
 
 
 public class Box{
     final int START_BOX = 3;
     final int END_BOX = 8;
+    final int END_PIECE = 4;
 
 
+    //Box template
     int[][][] box = {
         {
             {1,1,1,1,1,1,1,1,1,1},
@@ -129,27 +129,46 @@ public class Box{
             {1,1,1,1,1,1,1,1,1,1}
         }
     };
+    
+    /* Inserts a piece with a given starting position into the box
+     * takes in the box, the piece thats being placed, the the forward, left, and downward shift(aka starting POS)
+     * returns the box with the piece inside of it
+     */
 
-    public int[][][] insertPiece(int[][][] piece, int i, int j, int k){
-        int[][][] tempBox = this.box;
-        for(int x = 0; x < 4; x++){
-            for(int y = 0; y < 4; y++){
-                for(int z = 0; z < 4; z++){
-                    tempBox[x][y][z] = tempBox[x + i][y + j][z + k] + piece[x][y][z];
+    public int[][][] insertPiece(int[][][] oldCube, int[][][] piece, int leftShift, int forwardShift, int downwardShift){
+        int[][][] newBox = new int[10][10][10];
+        for(int x = 0; x < END_PIECE; x++){
+            for(int y = 0; y < END_PIECE; y++){
+                for(int z = 0; z < END_PIECE; z++){
+                    newBox[x + leftShift][y + forwardShift][z + downwardShift] = oldCube[x + leftShift][y + forwardShift][z + downwardShift] + piece[x][y][z];
                 }
             }
         }
-        return tempBox;
+        System.out.println(newBox[2][2][2] + " n ");
+        System.out.println(oldCube[2][2][2] + " o ");
+        return newBox;
     }
 
-    //check for piece collision with box
+    /*Combination of both checkBoxCollision and checkPieceCollision(See below)
+    * returns true if piece is colliding with either the box or another piece
+    * returns false if no collision is detected
+    */
+    public boolean checkCollision(int[][][] box){
+        return (checkBoxCollision(box) || checkPieceCollision(box));
+    }
 
-    public boolean checkBoxCollision(){
+
+
+
+    /* Checks piece collision with box(i.e theres a 2 outside of the 4x4x4) 
+     * return a boolean cannotPlace
+     * returns true if the piece cannot be placed(i.e theres a 2 outside the box)
+     * or false if the piece can be placed
+    */
+
+
+    public boolean checkBoxCollision(int[][][] box){
         boolean cannotPlace = false;
-
-
-
-        //inital large check
         for(int i = 0; i < 10; i++){
                 for(int j = 0; j < 10; j++){
                     for(int k = 0; k < 10; k++){
@@ -162,8 +181,11 @@ public class Box{
          return cannotPlace;
     }
 
-    //check for piece on piece collision
-    public boolean checkPieceCollision(){
+    /*Checks to see if placed pieces are colliding with each other
+     * returns a boolean, true if two pieces are on top of each(i.e a 2 in any spot)
+     * returns false if the place does not collide with any piece.
+     */
+    public boolean checkPieceCollision(int[][][] box){
         boolean cannotplace = false; 
 
         for(int i = START_BOX; i < END_BOX; i++){
@@ -178,6 +200,8 @@ public class Box{
         return cannotplace;
     }
 
+
+    //returns the box in this class, Box.java
     public int[][][] getBox(){
         return this.box;
     }

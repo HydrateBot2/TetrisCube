@@ -1,17 +1,68 @@
-import java.util.ArrayList;
 
 public class Solutions {
     int[][][][] solutions;
-    Piece obj1 = new Piece();
-    Box tempBox = new Box();
-    int[][][] box1 = tempBox.getBox();
-    final int x = 100;
-    final int y = 10;
-    final int z = 1;
+    Box functionRunner = new Box();
+    int[][][] tetrisCube = functionRunner.getBox();
+    Piece obj1;
+    final int X = 100;
+    final int Y = 10;
+    final int Z = 1;
     
-    public Solutions(){
-
+    public Solutions(Piece obj1){
+        this.obj1 = obj1;
     }
+
+    //initial test
+    public int[][][] test(){
+        int[][][] tempint;
+        for(int i = 0; i < 12; i++){
+            Piece tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
+            tempint = iterateThroughPositions(tempPiece, tempPiece.getX(), tempPiece.getY(), tempPiece.getZ());
+            for(int j = 0; j < 10; j ++){
+                for(int k = 0; k < 10; k ++){
+                    for(int l = 0; l < 10; l ++){
+                        this.tetrisCube[j][k][l] = this.tetrisCube[j][k][l] + tempint[j][k][l];
+                    }
+                }
+            }
+        }
+        return this.tetrisCube;
+    }
+
+    //Supposed to iterate through all the positions and place the piece when there is an open spot availible(NOT WORKING)
+    public int[][][] iterateThroughPositions(Piece piece, int i, int j, int k){
+        int[][][] tempBox2 = getTetrisCube();
+        for(int x = i; x < 7; x++){
+             for(int y = j; y < 7; y++){
+                for(int z = k; z < 7; z++){
+                    piece.setStartPOS(x, y, z);
+                    tempBox2 = functionRunner.insertPiece(tempBox2, piece.returnCurrentPiece(piece), x, y, z);
+                    if(obj1.checkBoxCollision(tempBox2) == true){
+                        tempBox2 = this.tetrisCube;
+                        System.out.println("Collision detected");
+                    }
+                    else{
+                        x = 7;
+                        y = 7;
+                        z = 7;
+                        return tempBox2;
+                    }
+                }
+            }
+        }
+        return getTetrisCube();
+    }
+
+
+    //returns the box that stores all the pieces
+    public int[][][] getTetrisCube(){
+        return this.tetrisCube;
+    }
+
+
+
+    //future stuff
+
 
     // public int[][][] getSolutions( int[][][] piece, int pieceNumber){ 
     //    int newPieceNumber = pieceNumber;
@@ -25,41 +76,6 @@ public class Solutions {
     //     piece = Box.getDict(pieceKeys.get(newPieceNumber));
     //     return newCube + getSolutions(newCube, piece, pieceNumber);
     // }
-
-    public int[][][] test(){
-        //Problem right now lies in pieceKeys not having the pieces stored properly.
-        System.out.println(obj1.getKeyList());
-            for(int i = 1; i < 7; i++){
-                Piece tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
-                iterateThroughPositions(tempPiece, tempPiece.startX, tempPiece.startX, tempPiece.startZ);
-            }
-            System.out.println(obj1.getKeyList());
-        System.out.println(obj1.getKeyList());
-        System.out.println(obj1.getKeyList());
-        return this.box1;
-    }
-
-    public int[][][] iterateThroughPositions(Piece piece, int i, int j, int k){
-        for(int x = i; x < 10; x++){
-            for(int y = j; y < 10; y++){
-                for(int z = k; z < 10; z++){
-                    piece.startX = x;
-                    piece.startY = y;
-                    piece.startZ = z;
-                    this.box1 = tempBox.insertPiece(piece.returnCurrentPiece(piece), x, y, z);
-                    // if(obj1.checkBoxCollision() != true){
-                    //     return this.box;
-                    // }
-
-                }
-            }
-        }
-        return this.box1;
-    }
-
-    public int[][][] getBox1(){
-        return this.box1;
-    }
 
 
     //checks to see if solution is unique
