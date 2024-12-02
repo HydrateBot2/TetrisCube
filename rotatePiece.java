@@ -1,5 +1,5 @@
 
-public class rotatePiece {
+public class rotatePiece extends Box{
     // Rotates the 3D int array 90 degrees around the X-axis
     public static int[][][] rotateX(int[][][] array) {
         int n = array.length;
@@ -18,7 +18,7 @@ public class rotatePiece {
     }
 
     // Rotates the 3D int array 90 degrees around the Y-axis
-    public static int[][][] rotateY(int[][][] array) {
+    public static int[][][] rotateZ(int[][][] array) {
         int n = array.length;
         int m = array[0].length;
         int p = array[0][0].length;
@@ -35,7 +35,7 @@ public class rotatePiece {
     }
 
     // Rotates the 3D int array 90 degrees around the Z-axis
-    public static int[][][] rotateZ(int[][][] array) {
+    public static int[][][] rotateY(int[][][] array) {
         int n = array.length;
         int m = array[0].length;
         int p = array[0][0].length;

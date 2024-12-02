@@ -177,6 +177,12 @@ public class Box{
         }
         return cannotplace;
     }
+
+    public int[][][] getBox(){
+        return this.box;
+    }
+
+    
     
     
 }
