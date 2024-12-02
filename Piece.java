@@ -70,10 +70,6 @@ public class Piece extends rotatePiece{
 
     //Backend programming stuff
 
-    public int[][][] returnCurrentPiece(Piece piece){
-       int[][][] returnPiece = piece.getPiece();
-       return returnPiece;
-    }
 
     public int[][][] getPiece(){
         return this.piece;

@@ -137,6 +137,14 @@ public class Box{
 
     public int[][][] insertPiece(int[][][] oldCube, int[][][] piece, int leftShift, int forwardShift, int downwardShift){
         int[][][] newBox = new int[10][10][10];
+        for (int i = 0; i < 10; i++) {
+            for(int j = 0; j < 10; j++) {
+                for(int k = 0; k < 10; k++){
+                    newBox[i][j][k] = oldCube[i][j][k];
+                }
+            }
+        }
+
         for(int x = 0; x < END_PIECE; x++){
             for(int y = 0; y < END_PIECE; y++){
                 for(int z = 0; z < END_PIECE; z++){
@@ -144,8 +152,8 @@ public class Box{
                 }
             }
         }
-        System.out.println(newBox[2][2][2] + " n ");
-        System.out.println(oldCube[2][2][2] + " o ");
+        // System.out.println(newBox[2][2][2] + " n ");
+        // System.out.println(oldCube[2][2][2] + " o ");
         return newBox;
     }
 
@@ -154,7 +162,18 @@ public class Box{
     * returns false if no collision is detected
     */
     public boolean checkCollision(int[][][] box){
-        return (checkBoxCollision(box) || checkPieceCollision(box));
+        boolean cannotPlace = false;
+        for(int i = 0; i < 10; i++){
+                for(int j = 0; j < 10; j++){
+                    for(int k = 0; k < 10; k++){
+                        if(box[i][j][k] > 1){
+                            cannotPlace = true;
+                        }
+                    }
+                }
+        }
+        return cannotPlace;
+        //return (checkBoxCollision(box) || checkPieceCollision(box));
     }
 
 
@@ -172,13 +191,13 @@ public class Box{
         for(int i = 0; i < 10; i++){
                 for(int j = 0; j < 10; j++){
                     for(int k = 0; k < 10; k++){
-                        if(box[i][j][k] == 2){
+                        if(box[i][j][k] >= 1){
                             cannotPlace = true;
                         }
                     }
                 }
         }
-         return cannotPlace;
+        return cannotPlace;
     }
 
     /*Checks to see if placed pieces are colliding with each other
@@ -191,7 +210,7 @@ public class Box{
         for(int i = START_BOX; i < END_BOX; i++){
             for(int j = START_BOX; j < END_BOX; j++){
                 for(int k = START_BOX; k < END_BOX; k++){
-                    if(box[i][j][k] == 2){
+                    if(box[i][j][k] >= 1){
                         cannotplace = true;
                     }
                 }
