@@ -4,7 +4,6 @@ public class Solutions {
     int[][][][] solutions;
     Piece obj1 = new Piece();
     Box tempBox = new Box();
-    ArrayList<String> pieceKeys = obj1.getKeyList();
     int[][][] box1 = tempBox.getBox();
     final int x = 100;
     final int y = 10;
@@ -28,10 +27,15 @@ public class Solutions {
     // }
 
     public int[][][] test(){
-        for(int i = 0; i < 12; i++){
-            Piece tempPiece = obj1.pieceDictionary.get(pieceKeys.get(i));
-            iterateThroughPositions(tempPiece, tempPiece.startX, tempPiece.startX, tempPiece.startZ);
-        }
+        //Problem right now lies in pieceKeys not having the pieces stored properly.
+        System.out.println(obj1.getKeyList());
+            for(int i = 1; i < 7; i++){
+                Piece tempPiece = obj1.pieceDictionary.get(obj1.getKeyList().get(i));
+                iterateThroughPositions(tempPiece, tempPiece.startX, tempPiece.startX, tempPiece.startZ);
+            }
+            System.out.println(obj1.getKeyList());
+        System.out.println(obj1.getKeyList());
+        System.out.println(obj1.getKeyList());
         return this.box1;
     }
 

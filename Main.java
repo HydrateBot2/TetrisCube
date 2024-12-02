@@ -3,10 +3,8 @@ public class Main{
 
         // Initialization    
         readFile fileByLine = new readFile("Pieces.txt");
-        Piece Pieces = new Piece();
+        Piece pieces = new Piece();
         Solutions test = new Solutions();
-        Pieces.pieceInitializer(fileByLine.getTxtFileByLine());
-
         test.test();
         for(int i = 0; i < 10; i++){
             for(int j = 0; j < 10; j++){

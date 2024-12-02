@@ -1,11 +1,13 @@
 import java.util.*;
+import java.util.Collections;
 
 
 public class Piece extends rotatePiece{
     ArrayList<Integer[][][]> piecesList = new ArrayList<>(); 
     Dictionary<String, Piece> pieceDictionary = new Hashtable<>();
-    Enumeration keyList;
+    ArrayList<String> keyList;
      
+    readFile txtfile = new readFile();
     int[][][] piece;
     int startX;
     int startY;
@@ -21,6 +23,7 @@ public class Piece extends rotatePiece{
         this.startZ = startZ;
         this.rotation = rotation;
         this.pieceName = pieceName;
+        pieceInitializer(txtfile.getTxtFileByLine());
     }
 
     public Piece(){
@@ -58,7 +61,9 @@ public class Piece extends rotatePiece{
                 
                 
             }
-        this.keyList = pieceDictionary.keys();
+        this.keyList = Collections.list(pieceDictionary.keys());
+        System.out.println(pieceDictionary.keys() + " WOWOWOWOOWOW");
+        System.out.println(this.keyList + "WOWOWOWOWOL");
     }
 
 
@@ -115,14 +120,20 @@ public class Piece extends rotatePiece{
 
     //Returns all of the keys in the dictionary
     public ArrayList<String> getKeyList(){
-        ArrayList<String> tempList = new ArrayList<>();
-        if(this.keyList != null){
-        while(keyList.hasMoreElements()){
-            tempList.add((String) keyList.nextElement());
-        }
-        return tempList;
-        }
-        return tempList;
+        System.out.println(this.keyList);
+        return this.keyList;
+        // ArrayList<String> tempList = new ArrayList<>();
+        // System.out.println(this.keyList + " WWWWWWWW");
+        // if(this.keyList != null){
+        //     System.out.println(this.keyList + " WWWWWWWW");
+        // while(keyList.hasMoreElements()){
+        //     tempList.add((String) keyList.nextElement());
+        // }
+        // System.out.println(tempList + " LLLLLLLLLLLL");
+        // return tempList;
+        // }
+        // System.out.println(tempList + " LLLLLLLLLLLL");
+        // return tempList;
     } 
 
     public void printPiece(){

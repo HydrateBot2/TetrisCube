@@ -9,6 +9,10 @@ public class readFile {
     String[] txtFileByLine = new String[275];
     int counter = 0;
 
+    public readFile(){
+        
+    }
+
     //Initializing and training regular expression
     Pattern pattern = Pattern.compile("^");
 
