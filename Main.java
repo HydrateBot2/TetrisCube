@@ -3,12 +3,12 @@ public class Main{
         public static void main(String[] args){
 
         // Initialization    
-        ReadFile fileByLine = new ReadFile("Pieces.txt", 275);
-        ReadFile fileByLineWithHeadStart = new ReadFile("HeadStartPieces.txt", 229);
+        // readFile fileByLine = new readFile("Pieces.txt", 275);
+        readFile fileByLineWHS = new readFile("HeadStartPieces.txt", 229);
         Piece pieces = new Piece();
         Box box = new Box();
         //pieces.pieceInitializer(fileByLine.getTxtFileByLine());
-        //pieces.pieceInitializer(fileByLine.getTxtFileByLineWithHeadStart());
+        pieces.pieceInitializer(fileByLineWHS.getTxtFileByLine());
         // System.out.println(pieces.keyList);
         // System.out.println(pieces.keyList);
         Solutions test = new Solutions();
@@ -47,7 +47,7 @@ public class Main{
         //     System.out.println();
         // }
         // System.out.println(test.getpieceinsert());
-        test.findSolutionsWithHeadStart(0);
+        test.findSolutions(0, box.getTetrisCube(true), true);
         //test.findSolutions(0);
         // for(int i = 0; i < 10; i++){
         //     for(int j = 0; j < 10; j++){

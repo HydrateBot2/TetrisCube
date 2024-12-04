@@ -2,14 +2,13 @@ import java.util.ArrayList;
 public class Solutions {
     ArrayList<int[][][]> solutions = new ArrayList<int[][][]>();
     Box box = new Box();
-    BoxWHS boxWHS = new BoxWHS();
     Piece piece = new Piece();
     PieceRotated pieceRotated = new PieceRotated();
     WriteToFile writer = new WriteToFile();
     int placedPieces = 0;
-    ReadFile readFile = new ReadFile("Pieces.txt", 275);
+    readFile readFile = new readFile("Pieces.txt", 275);
     int[][][] tetrisCube = box.getTetrisCube(false);
-    int[][][] tetrisCubeWHS = functionRunnerwWithHeadStart.getModifedBox();
+    int[][][] tetrisCubeWHS = box.getTetrisCube(true);
     Piece obj1;
     Piece tempPiece;
     int counter = 0;
@@ -20,17 +19,17 @@ public class Solutions {
     final int Z = 1;
     // array for discarding pieces
 
-    public void findSolutions(int pieceIndex, int[][][] tetrisCube){
-        functionRunnerPiece.pieceInitializer(functionerRunnerReadFile.getTxtFileByLine());
+    public void findSolutions(int pieceIndex, int[][][] tetrisCube, boolean headstart){
+        piece.pieceInitializer(readFile.getTxtFileByLine());
         if(pieceIndex == 12){
-            solutions.add(deepCopy(functionRunner.getTetrisCube()));
+            solutions.add(tetrisCube);
             writer.tryWriteToFile("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL" + placedPieces, false);
             return;
         }
         Piece previousTry = new Piece();
-        Piece piece = functionRunnerPiece.getDict().get(functionRunnerPiece.getKeyList().get(pieceIndex));
+        Piece tempPiece = piece.getDict().get(piece.getKeyList().get(pieceIndex));
         //Try placing this piece in every possible position with every rotation
-        for (Piece rotation : Rotations.getAllRotations(piece)){
+        for (Piece rotation : Rotations.getAllRotations(tempPiece)){
             //System.out.println("Trying new rotation");
             for (int x = 0; x < 7; x++) {
                // System.out.println("x = " + x);
@@ -39,7 +38,7 @@ public class Solutions {
                     for (int z = 0; z < 7; z++) {
                         //System.out.println("z = " + z);
                         if (canPlacePiece(tetrisCube, rotation, x, y, z)) {
-                            writer.tryWriteToFile("Piece: " + rotation.getName() + " placed at " + x + " " + y + " " + z + "Pieces Placed: " + placedPieces + "\n", false);
+                            writer.tryWriteToFile("Piece: " + rotation.getName() + " placed at " + x + " " + y + " " + z + "Pieces Placed: " + placedPieces + "\n", headstart);
                             tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z, false); // Place the piece
                             placedPieces++;
                             // for(int i = 0; i < 10; i++){
@@ -51,7 +50,7 @@ public class Solutions {
                             //     }
                             //     System.out.println();
                             // }
-                            findSolutions(pieceIndex + 1); // Recurse to place next piece
+                            findSolutions(pieceIndex + 1, tetrisCube, headstart); // Recurse to place next piece
 
                             placedPieces--; 
                             tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z, true);
@@ -138,7 +137,7 @@ public class Solutions {
              for(int y = j; y < 7; y++){
                 for(int z = k; z < 7; z++){
                     piece.setStartPOS(x, y, z);
-                    possibleNewBox = functionRunner.insertPiece(tempBox2, piece.getPiece(), x, y, z);
+                    possibleNewBox = box.insertPiece(tempBox2, piece.getPiece(), x, y, z);
 
                     // Make these series of for loops a method again
                     //probably cant not gonna mess with

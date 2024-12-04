@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 
-public class ReadFile {
+public class readFile{
     //Initializing variables
     private String[] txtFileByLine;
     private int counter = 0;
@@ -15,7 +15,7 @@ public class ReadFile {
     Pattern pattern = Pattern.compile("^");
 
     //Takes in a text file, stores each line in an array
-    public ReadFile(String fileName, int fileSize){
+    public readFile(String fileName, int fileSize){
         this.txtFileByLine = new String[fileSize];
         try{
             File file1 = new File(fileName);

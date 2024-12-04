@@ -335,7 +335,7 @@ public class Box{
      * or false if the piece can be placed
     */
     public int[][][] getTetrisCube(boolean headStart){
-        if(true){
+        if(headStart){
              return this.tetrisCubeWHS;
         } else {
             return this.tetrisCube;
