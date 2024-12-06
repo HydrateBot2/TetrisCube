@@ -4,7 +4,7 @@ public class Main{
 
         // Initialization    
         // readFile fileByLine = new readFile("Pieces.txt", 275);
-        readFile fileByLineWHS = new readFile("HeadStartPieces.txt", 229);
+        readFile fileByLineWHS = new readFile("HeadStartPieces.txt", 183);
         Piece pieces = new Piece();
         Box box = new Box();
         //pieces.pieceInitializer(fileByLine.getTxtFileByLine());

@@ -5,8 +5,9 @@ public class Solutions {
     Piece piece = new Piece();
     PieceRotated pieceRotated = new PieceRotated();
     WriteToFile writer = new WriteToFile();
-    int placedPieces = 0;
+    int placedPieces = 4;
     readFile readFile = new readFile("Pieces.txt", 275);
+    readFile readFileWHS = new readFile("HeadStartPieces.txt", 183);
     int[][][] tetrisCube = box.getTetrisCube(false);
     int[][][] tetrisCubeWHS = box.getTetrisCube(true);
     Piece obj1;
@@ -20,7 +21,11 @@ public class Solutions {
     // array for discarding pieces
 
     public void findSolutions(int pieceIndex, int[][][] tetrisCube, boolean headstart){
-        piece.pieceInitializer(readFile.getTxtFileByLine());
+        if(headstart){
+            piece.pieceInitializer(readFileWHS.getTxtFileByLine());
+        } else {
+            piece.pieceInitializer(readFile.getTxtFileByLine());
+        }
         if(pieceIndex == 12){
             solutions.add(tetrisCube);
             writer.tryWriteToFile("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL" + placedPieces, false);
