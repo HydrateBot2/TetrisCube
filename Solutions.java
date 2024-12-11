@@ -5,9 +5,9 @@ public class Solutions {
     Piece piece = new Piece();
     PieceRotated pieceRotated = new PieceRotated();
     WriteToFile writer = new WriteToFile();
-    int placedPieces = 4;
+    int placedPieces = 6;
     readFile readFile = new readFile("Pieces.txt", 275);
-    readFile readFileWHS = new readFile("HeadStartPieces.txt", 183);
+    readFile readFileWHS = new readFile("HeadStartPieces.txt", 137);
     int[][][] tetrisCube = box.getTetrisCube(false);
     int[][][] tetrisCubeWHS = box.getTetrisCube(true);
     Piece obj1;
@@ -27,6 +27,7 @@ public class Solutions {
             piece.pieceInitializer(readFile.getTxtFileByLine());
         }
         if(pieceIndex == 12){
+            System.out.println(pieceIndex);
             solutions.add(tetrisCube);
             writer.tryWriteToFile("LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL" + placedPieces, false);
             return;
@@ -44,6 +45,11 @@ public class Solutions {
                         //System.out.println("z = " + z);
                         if (canPlacePiece(tetrisCube, rotation, x, y, z)) {
                             writer.tryWriteToFile("Piece: " + rotation.getName() + " placed at " + x + " " + y + " " + z + "Pieces Placed: " + placedPieces + "\n", headstart);
+                            counter++;
+                            System.out.println(counter);
+                            if(counter > 138){
+                                System.out.println("reaching end of code");
+                            }
                             tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z, false); // Place the piece
                             placedPieces++;
                             // for(int i = 0; i < 10; i++){
@@ -176,6 +182,14 @@ public class Solutions {
         }
         // Couldn't place piece
         return null;
+    }
+
+    public int[][][] getCube(boolean headstart){
+        if(headstart){
+            return this.tetrisCubeWHS;
+        } else {
+            return this.tetrisCube;
+        }
     }
 
     //initial test(see how many pieces the computer can put in the box) WITHOUT ROTATIONS

@@ -12,7 +12,7 @@ public class WriteToFile {
     
   public void tryWriteToFile(String txt, boolean isModified){
     if(isModified){
-      Path path = Paths.get("dataLogWHSW4.txt");
+      Path path = Paths.get("dataLogWHSW6.txt");
         String content = txt;
        
         try {

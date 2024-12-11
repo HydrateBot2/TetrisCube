@@ -4,7 +4,7 @@ public class Main{
 
         // Initialization    
         // readFile fileByLine = new readFile("Pieces.txt", 275);
-        readFile fileByLineWHS = new readFile("HeadStartPieces.txt", 183);
+        readFile fileByLineWHS = new readFile("HeadStartPieces.txt", 137);
         Piece pieces = new Piece();
         Box box = new Box();
         //pieces.pieceInitializer(fileByLine.getTxtFileByLine());
@@ -52,7 +52,7 @@ public class Main{
         // for(int i = 0; i < 10; i++){
         //     for(int j = 0; j < 10; j++){
         //         for(int k = 0; k < 10; k++){
-        //         System.out.print(box.getTetrisCube()[i][j][k]);
+        //         System.out.print(test.getCube(true)[i][j][k]);
         //         }
         //         System.out.println();
         //     }
