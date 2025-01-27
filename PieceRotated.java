@@ -25,7 +25,13 @@ public class PieceRotated{
         this.currentPiece++;
         return this.currentPiece - 1;
     }
+    public int getRotationsLength(){
+        return this.pieces.size();
+    }
 
+    public Piece getPiece(int index){
+        return this.pieces.get(index);
+    }
 
 
     

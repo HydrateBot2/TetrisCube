@@ -11,7 +11,7 @@ public class Solutions {
     int[][][] tetrisCube = box.getTetrisCube(false);
     int[][][] tetrisCubeWHS = box.getTetrisCube(true);
     Piece obj1;
-    Piece tempPiece;
+    PieceRotated tempPiece;
     int counter = 0;
     boolean backtracking;
     final int END_PIECE = 4;
@@ -33,9 +33,11 @@ public class Solutions {
             return;
         }
         Piece previousTry = new Piece();
-        Piece tempPiece = piece.getDict().get(piece.getKeyList().get(pieceIndex));
+        PieceRotated tempPiece = new PieceRotated(piece.getDict().get(piece.getKeyList().get(pieceIndex)),piece.getDict().get(piece.getKeyList().get(pieceIndex)).getName());
+
         //Try placing this piece in every possible position with every rotation
-        for (Piece rotation : Rotations.getAllRotations(tempPiece)){
+        for (int r = 0; r < tempPiece.getRotationsLength(); r++){
+            Piece currentPiece = tempPiece.getPiece(r);
             //System.out.println("Trying new rotation");
             for (int x = 0; x < 7; x++) {
                // System.out.println("x = " + x);
@@ -43,14 +45,14 @@ public class Solutions {
                    // System.out.println("y = " + y);
                     for (int z = 0; z < 7; z++) {
                         //System.out.println("z = " + z);
-                        if (canPlacePiece(tetrisCube, rotation, x, y, z)) {
-                            writer.tryWriteToFile("Piece: " + rotation.getName() + " placed at " + x + " " + y + " " + z + "Pieces Placed: " + placedPieces + "\n", headstart);
+                        if (canPlacePiece(tetrisCube, currentPiece, x, y, z)) {
+                            writer.tryWriteToFile("Piece: " + currentPiece.getName() + " " + r + " placed at " + x + " " + y + " " + z + "Pieces Placed: " + placedPieces + "\n", headstart);
                             counter++;
                             System.out.println(counter);
                             if(counter > 138){
                                 System.out.println("reaching end of code");
                             }
-                            tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z, false); // Place the piece
+                            tetrisCube = insertPiece(tetrisCube, currentPiece.getPiece(), x, y, z, false); // Place the piece
                             placedPieces++;
                             // for(int i = 0; i < 10; i++){
                             //     for(int j = 0; j < 10; j++){
@@ -64,8 +66,8 @@ public class Solutions {
                             findSolutions(pieceIndex + 1, tetrisCube, headstart); // Recurse to place next piece
 
                             placedPieces--; 
-                            tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z, true);
-                            // tetrisCube = insertPiece(tetrisCube, rotation.getPiece(), x, y, z + 1); // Backtrack
+                            tetrisCube = insertPiece(tetrisCube, currentPiece.getPiece(), x, y, z, true);
+                            // tetrisCube = insertPiece(tetrisCube, currentPiece.getPiece(), x, y, z + 1); // Backtrack
                         }
                     }
                 }
@@ -141,48 +143,48 @@ public class Solutions {
     //     return this.tetrisCube;
     // }
 
-    public int[][][] iterateThroughPositions(int[][][] originalbox, Piece piece, int i, int j, int k){
-        int[][][] possibleNewBox = originalbox;
-        int[][][] tempBox2 = originalbox;
-        for(int x = i; x < 7; x++){
-             for(int y = j; y < 7; y++){
-                for(int z = k; z < 7; z++){
-                    piece.setStartPOS(x, y, z);
-                    possibleNewBox = box.insertPiece(tempBox2, piece.getPiece(), x, y, z);
+    // public int[][][] iterateThroughPositions(int[][][] originalbox, Piece piece, int i, int j, int k){
+    //     int[][][] possibleNewBox = originalbox;
+    //     int[][][] tempBox2 = originalbox;
+    //     for(int x = i; x < 7; x++){
+    //          for(int y = j; y < 7; y++){
+    //             for(int z = k; z < 7; z++){
+    //                 piece.setStartPOS(x, y, z);
+    //                 possibleNewBox = box.insertPiece(tempBox2, piece.getPiece(), x, y, z);
 
-                    // Make these series of for loops a method again
-                    //probably cant not gonna mess with
-                    // checking for collision 
-                    boolean cannotPlace = false;
-                    for(int row = 0; row < 10; row++){
-                            for(int col = 0; col < 10; col++){
-                                for(int zed = 0; zed < 10; zed++){
-                                    if(possibleNewBox[row][col][zed] > 1){
-                                        cannotPlace = true;
-                                    }
-                                }
-                            }
-                    }
-                    if(!cannotPlace) {
+    //                 // Make these series of for loops a method again
+    //                 //probably cant not gonna mess with
+    //                 // checking for collision 
+    //                 boolean cannotPlace = false;
+    //                 for(int row = 0; row < 10; row++){
+    //                         for(int col = 0; col < 10; col++){
+    //                             for(int zed = 0; zed < 10; zed++){
+    //                                 if(possibleNewBox[row][col][zed] > 1){
+    //                                     cannotPlace = true;
+    //                                 }
+    //                             }
+    //                         }
+    //                 }
+    //                 if(!cannotPlace) {
                         
-                        piece.setStartPOS(x, y, z + 1);
-                        // for(int o = 0; o < 10; o++){
-                        //     for(int u = 0; u < 10; u++){
-                        //         for(int l = 0; l < 10; l++){
-                        //             System.out.print(possibleNewBox[o][u][l]);
-                        //         }
-                        //         System.out.println();
-                        //     }
-                        //     System.out.println();
-                        // }
-                        return possibleNewBox;
-                    }
-                }
-            }
-        }
-        // Couldn't place piece
-        return null;
-    }
+    //                     piece.setStartPOS(x, y, z + 1);
+    //                     // for(int o = 0; o < 10; o++){
+    //                     //     for(int u = 0; u < 10; u++){
+    //                     //         for(int l = 0; l < 10; l++){
+    //                     //             System.out.print(possibleNewBox[o][u][l]);
+    //                     //         }
+    //                     //         System.out.println();
+    //                     //     }
+    //                     //     System.out.println();
+    //                     // }
+    //                     return possibleNewBox;
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     // Couldn't place piece
+    //     return null;
+    // }
 
     public int[][][] getCube(boolean headstart){
         if(headstart){
