@@ -1,58 +1,149 @@
 Piece: ^sword, red 0 placed at 1 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 3 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 4 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 7 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 10 placed at 0 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
 Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 16 placed at 0 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 19 placed at 3 3 5Pieces Placed: 7
+Piece: ^Regular L with tail, blue 21 placed at 3 3 3Pieces Placed: 7
 Piece: ^sword, red 2 placed at 3 3 5Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
 Piece: ^sword, red 3 placed at 3 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 11 placed at 3 1 3Pieces Placed: 9
+Piece: ^Short t with a thumb, yellow 12 placed at 3 1 4Pieces Placed: 9
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 4 placed at 3 4 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
 Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
 Piece: ^Short t with a thumb, yellow 20 placed at 2 5 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
 Piece: ^sword, red 3 placed at 3 4 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 5 placed at 3 3 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
 Piece: ^sword, red 3 placed at 3 6 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 3 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 4 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 7 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^sword, red 4 placed at 3 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 11 placed at 3 1 2Pieces Placed: 9
+Piece: ^Short t with a thumb, yellow 12 placed at 3 1 3Pieces Placed: 9
 Piece: ^Regular L with tail, blue 4 placed at 3 4 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
 Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
 Piece: ^Short t with a thumb, yellow 20 placed at 2 5 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
 Piece: ^sword, red 4 placed at 3 4 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 18 placed at 3 2 3Pieces Placed: 9
 Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
 Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 18 placed at 3 2 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
 Piece: ^sword, red 4 placed at 3 6 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 3 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 4 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 7 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
+Piece: ^Short t with a thumb, yellow 20 placed at 2 5 3Pieces Placed: 9
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
 Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
@@ -62,37 +153,116 @@ Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^sword, red 6 placed at 0 3 3Pieces Placed: 6
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  19 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  19 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
 Piece: ^sword, red 7 placed at 1 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 3 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 4 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 7 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 10 placed at 0 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 14 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  3 placed at 3 4 3Pieces Placed: 8
 Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 16 placed at 0 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 19 placed at 3 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 21 placed at 3 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 21 placed at 3 3 3Pieces Placed: 7
 Piece: ^sword, red 8 placed at 0 3 3Pieces Placed: 6
-Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
-Piece: ^sword, red 8 placed at 0 4 3Pieces Placed: 6
-Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
-Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
-Piece: ^sword, red 11 placed at 3 1 3Pieces Placed: 6
-Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
-Piece: ^sword, red 12 placed at 3 1 3Pieces Placed: 6
-Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
-Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
-Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
-Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
-Piece: ^sword, red 12 placed at 3 3 3Pieces Placed: 6
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^sword, red 8 placed at 0 4 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 18 placed at 3 2 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 18 placed at 3 2 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^sword, red 11 placed at 3 1 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 5 placed at 3 3 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^sword, red 12 placed at 3 1 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 5 placed at 3 3 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 18 placed at 3 2 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^sword, red 12 placed at 3 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 3 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 7 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
+Piece: ^Short t with a thumb, yellow 20 placed at 2 5 3Pieces Placed: 9
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
 Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
@@ -102,25 +272,70 @@ Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^sword, red 14 placed at 3 3 0Pieces Placed: 6
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  14 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  14 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 10 placed at 0 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 14 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 19 placed at 3 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 21 placed at 3 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 21 placed at 3 3 3Pieces Placed: 7
 Piece: ^sword, red 15 placed at 0 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
 Piece: ^sword, red 17 placed at 0 1 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 5 placed at 3 3 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 12 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
 Piece: ^extended L with a thumb, blue  12 placed at 3 3 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 18 placed at 3 2 3Pieces Placed: 9
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
 Piece: ^sword, red 17 placed at 0 3 3Pieces Placed: 6
+Piece: ^Regular L with tail, blue 0 placed at 0 1 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 3 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 4 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 7 placed at 0 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 12 placed at 3 0 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
+Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
+Piece: ^Short t with a thumb, yellow 20 placed at 2 5 3Pieces Placed: 9
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  12 placed at 3 1 3Pieces Placed: 8
 Piece: ^Short t with a thumb, yellow 13 placed at 3 5 3Pieces Placed: 9
@@ -130,11 +345,35 @@ Piece: ^extended L with a thumb, blue  4 placed at 3 3 3Pieces Placed: 8
 Piece: ^sword, red 19 placed at 3 3 3Pieces Placed: 6
 Piece: ^Regular L with tail, blue 0 placed at 1 1 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  14 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
+Piece: ^extended L with a thumb, blue  14 placed at 3 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 8 placed at 1 4 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 10 placed at 0 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 11 placed at 3 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 14 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 17 placed at 1 1 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 19 placed at 3 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 21 placed at 3 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 21 placed at 3 3 3Pieces Placed: 7
 Piece: ^sword, red 21 placed at 3 3 0Pieces Placed: 6
+Piece: ^Regular L with tail, blue 8 placed at 1 6 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 10 placed at 0 3 5Pieces Placed: 7
+Piece: ^Regular L with tail, blue 11 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 14 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 16 placed at 0 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 17 placed at 1 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 19 placed at 3 3 5Pieces Placed: 7
 Piece: ^Regular L with tail, blue 21 placed at 3 3 2Pieces Placed: 7
+Piece: ^Regular L with tail, blue 21 placed at 3 3 3Pieces Placed: 7
 Piece: ^sword, red 21 placed at 3 3 2Pieces Placed: 6
+Piece: ^Regular L with tail, blue 2 placed at 3 3 3Pieces Placed: 7
+Piece: ^Regular L with tail, blue 3 placed at 4 3 3Pieces Placed: 7
 Piece: ^Regular L with tail, blue 15 placed at 1 3 3Pieces Placed: 7
 Piece: ^extended L with a thumb, blue  0 placed at 1 3 3Pieces Placed: 8
+Piece: ^Regular L with tail, blue 15 placed at 1 6 3Pieces Placed: 7

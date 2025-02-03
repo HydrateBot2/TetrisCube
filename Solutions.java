@@ -47,11 +47,11 @@ public class Solutions {
                         //System.out.println("z = " + z);
                         if (canPlacePiece(tetrisCube, currentPiece, x, y, z)) {
                             writer.tryWriteToFile("Piece: " + currentPiece.getName() + " " + r + " placed at " + x + " " + y + " " + z + "Pieces Placed: " + placedPieces + "\n", headstart);
-                            counter++;
-                            System.out.println(counter);
-                            if(counter > 138){
-                                System.out.println("reaching end of code");
-                            }
+                            // counter++;
+                            // System.out.println(counter);
+                            // if(counter > 138){
+                            //     System.out.println("reaching end of code");
+                            // }
                             tetrisCube = insertPiece(tetrisCube, currentPiece.getPiece(), x, y, z, false); // Place the piece
                             placedPieces++;
                             // for(int i = 0; i < 10; i++){
