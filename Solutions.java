@@ -5,7 +5,7 @@ public class Solutions {
     Piece piece = new Piece();
     PieceRotated pieceRotated = new PieceRotated();
     WriteToFile writer = new WriteToFile();
-    int placedPieces = 6;
+    int placedPieces = 0;
     readFile readFile = new readFile("Pieces.txt", 275);
     readFile readFileWHS = new readFile("HeadStartPieces.txt", 137);
     int[][][] tetrisCube = box.getTetrisCube(false);
