@@ -47,7 +47,7 @@ public class Main{
         //     System.out.println();
         // }
         // System.out.println(test.getpieceinsert());
-        test.findSolutions(0, box.getTetrisCube(false), false);
+        test.findSolutions(0, box.getTetrisCube(true), true);
         //test.findSolutions(0);
         // for(int i = 0; i < 10; i++){
         //     for(int j = 0; j < 10; j++){
